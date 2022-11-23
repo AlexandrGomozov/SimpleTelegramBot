@@ -16,7 +16,7 @@ developments = """====МАШТАБНОЕ ОБНОВЛЕНИЕ {}====
 - добавлены комады (add_wishes, good, bad, start) 
 """.format(ver)
 
-RANDOM_BAY = ["До свидания!", "скоро увидимся!", "до новых встреч!", "приятно было иметь дело с вами! ;)"]
+RANDOM_BAY = ["До свидания!", "Скоро увидимся!", "До новых встреч!", "приятно было иметь дело с вами! ;)"]
 
 RANDOM_HELLO = ["привет от старых штеблет ;)", "привет :)", "hello", "здравствуйте!!!"]
 
@@ -215,7 +215,7 @@ def add_random_task(message):
     date = "Cегодня"
     text = random.choice(RANDOM_TASK)
     add_task(date, text, message.from_user.id)
-    bot.send_message(message.chat.id, "Задача: " + text + " добавлена на дату:" + date)
+    bot.send_message(message.chat.id, "Задача: " + text + " добавлена на дату: " + date)
 
 
 @bot.message_handler(commands=['show', 'print'])
